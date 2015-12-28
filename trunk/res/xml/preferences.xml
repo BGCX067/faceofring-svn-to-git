@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceScreen android:title="@string/settings_onfaceup"
+		android:summary="@string/prefs_onfaceup_summary">
+
+		<PreferenceCategory android:title="@string/settings_onfaceup">
+
+			<CheckBoxPreference
+				android:key="ONFACEUP_IS_MUTE_RING_STREAM"
+				android:title="@string/setttings_turnoff_ringing"
+				android:summary="@string/setttings_turnoff_ringing"
+				android:defaultValue="false" />
+
+			<CheckBoxPreference
+				android:key="ONFACEUP_IS_MUTE_OTHER_AUDIO_STREAMS"
+				android:title="@string/setttings_turnoff_other_audio"
+				android:summary="@string/prefs_turnoff_other_audio_summary"
+				android:defaultValue="false" />
+
+			<CheckBoxPreference
+				android:key="ONFACEUP_IS_DISABLE_VIBRATION"
+				android:title="@string/setttings_turnoff_vibration"
+				android:summary="@string/setttings_turnoff_vibration"
+				android:defaultValue="true" />
+
+		</PreferenceCategory>
+
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/settings_onfacedown"
+		android:summary="@string/prefs_onfacedown_summary">
+
+		<PreferenceCategory
+			android:title="@string/settings_onfacedown">
+
+			<CheckBoxPreference
+				android:key="ONFACEDOWN_IS_MUTE_RING_STREAM"
+				android:title="@string/setttings_turnoff_ringing"
+				android:summary="@string/setttings_turnoff_ringing"
+				android:defaultValue="true" />
+
+			<CheckBoxPreference
+				android:key="ONFACEDOWN_IS_MUTE_OTHER_AUDIO_STREAMS"
+				android:title="@string/setttings_turnoff_other_audio"
+				android:summary="@string/prefs_turnoff_other_audio_summary"
+				android:defaultValue="false" />
+
+			<CheckBoxPreference
+				android:key="ONFACEDOWN_IS_DISABLE_VIBRATION"
+				android:title="@string/setttings_turnoff_vibration"
+				android:summary="@string/setttings_turnoff_vibration"
+				android:defaultValue="true" />
+
+			<CheckBoxPreference
+				android:key="ONFACEDOWN_IS_SOFT_VIBRATION_ENABLED"
+				android:title="@string/setttings_turnon_soft_vibration"
+				android:summary="@string/prefs_turnon_soft_vibration_summary"
+				android:defaultValue="true" />
+
+			<CheckBoxPreference
+				android:key="ONFACEDOWN_IS_WAKE_UP_DELAY_ENABLED"
+				android:title="@string/setttings_turnon_wake_up_delay"
+				android:summary="@string/prefs_turnon_wake_up_delay_summary"
+				android:defaultValue="true" />
+
+		</PreferenceCategory>
+
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="@string/prefs_out_of_service"
+		android:summary="@string/prefs_out_of_service_summary">
+
+		<PreferenceCategory
+			android:title="@string/prefs_outof_is_out">
+
+			<CheckBoxPreference android:key="OUTOF_IS_OUT"
+				android:title="@string/prefs_outof_is_out"
+				android:summary="@string/prefs_outof_is_out_summary"
+				android:defaultValue="false" />
+
+			<CheckBoxPreference
+				android:layout="?android:attr/preferenceLayoutChild"
+				android:dependency="OUTOF_IS_OUT"
+				android:key="OUTOF_IS_OUT_IS_CUSTOM_SOUND"
+				android:title="@string/prefs_outof_is_out_is_custom_sound"
+				android:summary="@string/prefs_outof_is_out_is_custom_sound_summary"
+				android:defaultValue="false" />
+
+			<RingtonePreference
+				android:layout="?android:attr/preferenceLayoutChild"
+				android:dependency="OUTOF_IS_OUT_IS_CUSTOM_SOUND"
+				android:key="OUTOF_IS_OUT_CUSTOM_SOUND"
+				android:title="@string/prefs_outof_is_out_custom_sound"
+				android:summary="@string/prefs_outof_is_out_custom_sound_summary"
+				android:ringtoneType="notification"
+				android:defaultValue="content://settings/system/notification_sound" />
+
+		</PreferenceCategory>
+
+		<PreferenceCategory android:title="@string/prefs_outof_is_in">
+
+			<CheckBoxPreference android:key="OUTOF_IS_IN"
+				android:title="@string/prefs_outof_is_in"
+				android:summary="@string/prefs_outof_is_in_summary"
+				android:defaultValue="false" />
+
+			<CheckBoxPreference
+				android:layout="?android:attr/preferenceLayoutChild"
+				android:dependency="OUTOF_IS_IN"
+				android:key="OUTOF_IS_IN_IS_CUSTOM_SOUND"
+				android:title="@string/prefs_outof_is_out_is_custom_sound"
+				android:summary="@string/prefs_outof_is_out_is_custom_sound_summary"
+				android:defaultValue="false" />
+
+			<RingtonePreference
+				android:layout="?android:attr/preferenceLayoutChild"
+				android:dependency="OUTOF_IS_IN_IS_CUSTOM_SOUND"
+				android:key="OUTOF_IS_IN_CUSTOM_SOUND"
+				android:title="@string/prefs_outof_is_out_custom_sound"
+				android:summary="@string/prefs_outof_is_out_custom_sound_summary"
+				android:ringtoneType="notification"
+				android:defaultValue="content://settings/system/notification_sound" />
+
+		</PreferenceCategory>
+
+	</PreferenceScreen>
+
+	<!-- 
+		<CheckBoxPreference android:key="DROP_PREFS"
+		android:title="Drop all preferences"
+		android:defaultValue="true" />
+	-->
+
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+Settings 1:
+
+Face Up
+- O - Mute ring stream
+- X - Disable vibration
+
+Face Down 
+- X - Mute ring stream
+- X - Disable vibration
+- X - Enable soft vibration
+- X - Enable wake up delay
+
+Test 1:
+- The position of the phone is face up.
+- Incoming call
+*** Delay 5 seconds before ring
+*** Vibration alert is off, Only Sound
+- Turn the phone over
+*** Sounds is off after few seconds
+- Trun the phone over - Face Up state
+*** ~10 seconds delay befor ring is on
+- Turn the phone about 45 percent degree
+** Vibration is on after few seconds
+
+
+!!! выключить мордой вниз. перевернуть. звонок.
+!!! выключить мордой вверх. перевернуть. звонок.
+!!! выключить мордой вверх\вниз\средне. положить мордой вверх\вниз\средне. звонок
+!!! выключить мордой вверх\вниз\средне. вяло колебать телефон. звонок
+!!! выключить мордой вверх\вниз\средне. тряст телефон. звонок
+!!! гарнитуру подключаем и???
+!!! включаем проигрователь. переварачиваем мордой вниз. с гарнитурой и без?
+
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<ScrollView android:id="@+id/settings_onfaceup"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/settings_onfaceup">
+
+			<CheckBox
+				android:id="@+id/settings_onfaceup_turnoff_ringing"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnoff_ringing" />
+
+			<CheckBox
+				android:id="@+id/settings_onfaceup_turnoff_other_audio"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnoff_other_audio" />
+
+			<CheckBox
+				android:id="@+id/settings_onfaceup_turnoff_vibration"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnoff_vibration" />
+
+		</LinearLayout>
+	</ScrollView>
+
+
+	<ScrollView android:id="@+id/settings_onfacedown"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<CheckBox
+				android:id="@+id/settings_onfacedown_turnoff_ringing"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnoff_ringing" />
+
+			<CheckBox
+				android:id="@+id/settings_onfacedown_turnoff_other_audio"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnoff_other_audio" />
+
+			<CheckBox
+				android:id="@+id/settings_onfacedown_turnoff_vibration"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnoff_vibration" />
+
+			<CheckBox
+				android:id="@+id/settings_onfacedown_turnon_soft_vibration"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnon_soft_vibration" />
+
+			<CheckBox
+				android:id="@+id/settings_onfacedown_turnon_wake_up_delay"
+				android:paddingBottom="24sp" android:paddingTop="24sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/setttings_turnon_wake_up_delay" />
+
+		</LinearLayout>
+	</ScrollView>
+
+</merge>

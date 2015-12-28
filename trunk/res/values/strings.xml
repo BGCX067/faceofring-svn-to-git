@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Main</string>
+	<string name="app_name">Face of Ring</string>
+	<string name="app_help">Face of Ring - Help</string>
+	<string name="app_settings">Face of Ring - Settings</string>
+	<string name="buttons_onoff">OnOff</string>
+	
+	<string name="settings_onfaceup">Face Up</string>
+	<string name="prefs_onfaceup_summary">The phone is positioned horizontally and its face is up.</string>
+	<string name="settings_onfacedown">Face Down</string>
+	<string name="prefs_onfacedown_summary">The phone is positioned horizontally and its face is down.</string>
+	<string name="settings_other">Other</string>
+	<string name="setttings_turnoff_ringing">Mute ring stream</string>
+	<string name="setttings_turnoff_other_audio">Mute other audio</string>
+	<string name="prefs_turnoff_other_audio_summary">Phone should fall asleep itself. Please read help for details.</string>
+	<string name="setttings_turnoff_vibration">Turn off ring vibration</string>
+	<string name="setttings_turnon_soft_vibration">Enable soft vibration</string>
+	<string name="prefs_turnon_soft_vibration_summary">Short vibration once at 10 seconds.</string>
+	<string name="setttings_turnon_wake_up_delay">Enable wake up delay</string>
+	<string name="prefs_turnon_wake_up_delay_summary">Have a time to check caller identity and place the phone face down again if desired.</string>
+
+	<string name="prefs_out_of_service">Out of service</string>
+	<string name="prefs_out_of_service_summary">Out of \\In service notifications</string>
+
+	<string name="prefs_outof_is_out">Out of service notification</string>
+	<string name="prefs_outof_is_out_summary">Sound notification when the phone lost a cell signal.</string>
+	<string name="prefs_outof_is_out_is_custom_sound">Enable custom rington</string>
+	<string name="prefs_outof_is_out_is_custom_sound_summary">Enable selection of custom rington</string>
+	<string name="prefs_outof_is_out_custom_sound">Select notification rington</string>
+ 	<string name="prefs_outof_is_out_custom_sound_summary">Ringtone to use with notifications</string>
+	<string name="prefs_outof_is_in">In service notification</string>
+	<string name="prefs_outof_is_in_summary">Sound notification when the phone found a cell signal.</string>
+
+
+	<string name="checkbox">CheckBox</string>
+	
+</resources>

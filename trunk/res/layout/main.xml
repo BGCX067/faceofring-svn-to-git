@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_main" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:text="@string/settings_onfaceup">
+
+	<ru.romario.faceofring.ui.StartButton
+		android:id="@+id/button_toggle" android:layout_x="40px"
+		android:layout_y="63px" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:height="93px"
+		android:width="111px" />
+
+	<Button android:id="@+id/button_settings" android:layout_y="375px"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="Settings"
+		android:layout_x="25px" android:paddingLeft="37px"
+		android:paddingRight="37px" />
+
+	<Button android:id="@+id/button_help"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="Help"
+		android:paddingRight="47px" android:paddingLeft="48px"
+		android:layout_x="170px" android:layout_y="375px" />
+
+	<TextView android:id="@+id/main_info_text"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:scrollbars="vertical"
+		android:layout_y="180px" android:textSize="15sp"
+		android:layout_x="48px" android:text="Please read help.">
+	</TextView>
+
+
+
+</AbsoluteLayout>

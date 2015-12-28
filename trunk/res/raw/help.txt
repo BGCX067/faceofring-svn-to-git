@@ -1,0 +1,92 @@
+First and foremost, thank you all for the feedback you provided!
+
+1.5.2
+  - fix: forceclose on start (Many thanks to Phil!). 
+
+Known issues (after installation):
+  - please review vibration settings
+  - app needs to be started 
+
+Note (Do you want to mute all sounds?): 
+
+There is no way to recognize phone orientation while screen is off. The accelerometer does not work at this time.
+Thus you can mute all other sounds in the guaranteed way only if you turn over the phone with active screen (screen on) and give it to fall asleep itself. 
+
+Short summary:
+
+The application has the capability to recognize the position and the orientation of the phone. It can differentiate among the following three states:
+  1. The phone is positioned horizontally and its face is up. This is "Face Up" state.
+  2. The phone is positioned horizontally and its face is down. This is "Face Down" state.
+  3. The phone is NOT positioned horizontally. This is the "Default" state.
+While in the "Default" state, the application restores default settings to your ring stream and vibration. In the other states you can mute ring stream or\and turn off vibration (depending on your settings).
+
+Typical scenarios:
+
+Scenario 1: You want to disable the vibration when phone is positioned horizontally (ex. lying on the table). At the same time, you want the vibration alert in other situations.
+Solution: Disable vibration on both states: "Face Up" and "Face Down".
+
+Scenario 2: You are in a meeting and don't want to be interrupted with the alert of any kind.
+Solution: Disable ring stream and vibration in "Face Down" state. Then simply put the phone face down when complete silence is desired.
+
+Scenario 3: May be you want to turn off only ring stream in case 2?
+
+Scenario 4: Always turn off ring stream when phone is on the table. The vibration alert is enough.
+Solution: Mute ring only on both states.
+
+Scenario 5: And so on. Settings are for your suit.
+
+Other Features:
+
+  - In "Face Down" state: Soft vibration while ringing (once every 10 seconds) so that you still receive incoming calls but in a more discrete manner.
+  - In "Face Down" state: Delay about 10 seconds before waking up that provides phone owner with ample time to check caller identity and place the phone face down again if desired.
+  - The application is started automatically after phone reboot.
+  - Capability to mute all other sounds. Please note: There is no way to recognize phone orientation while screen is off. The accelerometer does not work at this time. Thus you can mute all other sounds in the guaranteed way only if you turn over the phone while screen is active (screen on) and give it to sleep itself.
+  - Out of service and In service notifications. In other words - you will be informed when cell signal is lost or found. 
+
+Please Test Before Using:
+
+  Start the application and place the phone on the table. The position of the phone, face down or face up, would depend on the scenario you want to test. Initiate an incoming call to your phone from another number. Turn your phone in other orientation while it is ringing. Please wait a few seconds. It is needed to precise definition of orientation. 
+
+Known Issues:
+
+  - The ring vibration cannot be stopped once started.
+  - Be sure to stop the application before changing "Phone vibrate" property in the Phone Settings. The application "remembers" it during starting sequence. The original property value will be restored each time when the phone is not positioned horizontally.    
+  - There may be an instance when phone orientation sensor returns wrong data during phone vibration alert. In this case can help only "Delay before wake up". In other case, application can decide that it is on "Face Up" or "Default" state and then it turns on ring and vibration (depending on your settings).
+
+Roadmap *:
+
+  - put the project to opensource
+  - organize feedback and feature request public place
+  - improve user interface
+  - excluded list for people from the contact database (you can grant to one group vibrate only and to other group grant ring only).
+  - emergency turn off application, when specific SMS is received so you can find your phone in a silent mode.
+  - other features (from your feedback)
+*  Stay tuned and your patience is appreciated! Real life sometimes has a higher priority! :o) I do plan at least one release per month.
+
+Change Log:
+
+1.5.1
+  - Out of \ In service signal notification (ex. phone in dead zone)
+  - New preference layout
+
+1.4.0
+  - Improved algorithm of recognizing phone orientation at start of ringing
+  - Added capability to mute all other sounds. Please read Note in the Help. 
+
+1.3.1
+  - Improved user interface for the main screen. Courtesy of the great UI designer Unguided (http://www.unguided.ru) 
+  - Bug fixed:  same time state is not changed.
+  - Improved Help
+
+1.2.1
+  - smoothing the data of sensors when vibration or a loud sound exists
+  - Precise definition of orientation when the phone was turned over if screen is off
+  - Battery life issue: there is no activity when the screen is off
+  - Horizontal layout fixed
+
+1.1.0
+  - No new features
+  - Help and minimum settings were added.
+
+1.0.0
+  - First public release.
